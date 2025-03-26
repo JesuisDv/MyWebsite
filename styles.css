@@ -36,6 +36,10 @@ header.active a{
 }
 
 
+h1::first-letter{
+    color: #a30000;
+}
+
 li{
     list-style: none;
 }
@@ -113,3 +117,31 @@ section{
 }
 
 
+/* 3 lineas */
+.menu-icon{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;    
+}
+
+.menu-icon .line{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px){
+
+    .ops {
+        display: none;
+    }
+
+    .menu-icon{
+        display: flex;
+    }
+
+    .menu-icon{
+        display: flex;
+    }
+}
