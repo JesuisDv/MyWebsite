@@ -183,6 +183,7 @@ section{
     height: 3px;
     background-color: white;
     margin: 5px 0;
+    
 }
 
 
@@ -206,6 +207,35 @@ section{
     }
 }
 
+@media (max-width: 768px){
+   header nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+        background:white;
+        position: absolute;
+        top: 60px;
+        text-align: center;
+        right: 0;
+
+
+    }
+
+   .open ul{
+        display: flex;
+    }
+
+     .open .enlace{
+        color: #000;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+    
+
+}
 
 /* Footer */
 footer {

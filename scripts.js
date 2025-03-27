@@ -11,6 +11,14 @@ function fixNav(){
     }
 };
 
+// Menu responsivo
+
+const menuIcon = document.querySelector('.menu-icon');
+
+menuIcon.addEventListener("click", () =>{
+    nav.classList.toggle("open");
+})
+
 
 // Animacion cambio color letras
 const text = document.querySelector(".animated-text");
