@@ -1,0 +1,151 @@
+/* General */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Body */
+body{
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+}
+
+/* Header */
+header{
+  background-color: #000;
+  color: #fff;
+  padding: 10px 120px;
+  align-items: center;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  list-style: none;
+  gap: 25px
+}
+
+nav a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+li{
+  list-style: none;
+}
+
+
+/* Section 1 */
+.S1{
+  background-color: #000;
+  color: white;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 50px;
+}
+
+.divS1{
+  display: flex;
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.divS1 h1{
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.divS1 p{
+  font-size: 1.3rem;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.divS1 button{
+  border: 1px solid #F8FF00;
+  background-color: #000;
+  color: #fff;
+  width: 55%;
+  padding: 18px;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+/* Section 2 */
+.S2{
+  background-color: #0d0d0d;
+  color: #fff;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.divS2{
+  margin: 0 auto;
+}
+
+.divS2 ul{
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.divS2 li span{
+  background-color: #1c1c1c;
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.divS2 li span span{
+  display: flex;
+  background-color: #F8FF00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.divS2 li span span svg{
+  margin: 5px;
+}
+
+/* Section 3 Carreras */
+
+.S3{
+  background-color: #fff;
+  color: #000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.divS3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
