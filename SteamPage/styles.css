@@ -6,7 +6,7 @@
 }
 /* Body */
 body{
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100vh;
   background-color: #f0f0f0;
 }
@@ -118,7 +118,7 @@ li{
   background-color: #1c1c1c;
   width: 50px;
   height: 50px;
-  border-radius: 10%;
+  border-radius: 20%;
   display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
@@ -142,16 +142,20 @@ li{
 .S3{
   background-color: #f0f0f0;
   color: #000;
-  height: 200vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
   margin-top: 60px;
+  margin-bottom: 50rem; /* o más si hace falta */
+  position: relative; /* Asegura el flujo normal del DOM */
+  z-index: 1;
 }
 
 .divS3{
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 30px;
   width: 65%;
@@ -163,6 +167,7 @@ li{
   justify-content: end;
   width: 100%;
   gap: 20px;
+  font-weight: 900;
 }
 
 .titleS3 h2{
@@ -179,6 +184,14 @@ li{
 .carreraText{
   width: 100%;
   margin: 0 auto;
+  text-align: end;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.carreraTextSub{
+  width: 65%;
+  margin: 0 auto;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 500;
@@ -191,16 +204,14 @@ li{
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr) ;
   gap: 20px;
-  width: 100%;
-}
-
-.gridCarreras{
+  justify-content: center;
+  width: 80%;
   padding: 30px;
-  display: grid;
   gap: 60px;
   text-align: left;
   border-radius: 15px;
 }
+
 
 .carrerasItems{
   background-color: #fff;
@@ -208,39 +219,142 @@ li{
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
 .carreraP{
   color: #695cd2;
   font-size: 1.2rem;
-  font-weight: 700;  
+  font-weight: 500;  
 }
 
 .carrerasItems h4{
   font-size: 1.7rem;
+  font-weight: 700;
 }
 
 .carreraText{
   font-size: 0.9rem;
   text-align: start;
+  font-weight: 500;
 }
 
-.carrerasItems li{
-  list-style: circle;
-}
 
 .carrerasItems button{
-  background-color: #000;
-  color: #fff;
-  padding: 10px;
+  margin: 0 auto;
+  background-color: #F8FF00;
+  color: #000;
+  padding:18px;
   border-radius: 10px;
-  width: 30%;
+  width: 90%;
   font-size: 1.1rem;
   font-weight: 700;
 }
 
+/* Tags Carreras ul>li */
+
 .tagsCarreras li{
   display: flex;
+  gap: 5px;
+  list-style-type: disc;
+}
+
+.ulTags{
+  display: flex;
   gap: 10px;
+  margin-top: 25px;
+}
+
+.ulTags .certificado{
+  display: flex;
+  background-color: #EBF5FD;
+  border:1px solid #66baff;
+  padding: 10px 10px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 45%;
+  align-items: center;
+  gap: 10px;
+  color: #66baff;
+}
+
+.altaDemanda{
+  display: flex;
+  background-color: #EFF7ED;
+  border:1px solid #77b567;
+  padding: 10px 10px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 45%;
+  align-items: center;
+  gap: 10px;
+  color: #77b567;
+}
+
+.listaCarreras {
+  list-style-type: disc; 
+  padding-left: 20px;  
+}
+
+.listaCarreras li::marker {
+  color: #000000; 
+  font-size: 1.2em; 
+}
+
+.S4{
+  background-color: #000;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 60px;
+  color: white;
+  position: relative;
+  z-index: 0;
+}
+
+.divS4{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  background-color: #000;
+  padding: 30px;
+  color: #fff;
+}
+
+.gridS4{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  width: 60%;
+}
+
+.firstBox{
+
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+}
+
+.secondBox{
+  display: flex;
+  gap: 20px;
+}
+
+.secondBox div{
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #000;
 }
