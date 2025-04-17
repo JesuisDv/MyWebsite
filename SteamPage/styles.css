@@ -6,15 +6,16 @@
 }
 /* Body */
 body{
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
   height: 100vh;
+  background-color: #f0f0f0;
 }
 
 /* Header */
 header{
   background-color: #000;
   color: #fff;
-  padding: 10px 120px;
+  padding: 10px 380px;
   align-items: center;
 }
 
@@ -26,7 +27,7 @@ nav{
 nav ul{
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 100px;
   list-style: none;
   gap: 25px
 }
@@ -34,8 +35,8 @@ nav ul{
 nav a{
   color: #fff;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 li{
@@ -47,7 +48,7 @@ li{
 .S1{
   background-color: #000;
   color: white;
-  min-height: 90vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -57,7 +58,7 @@ li{
 
 .divS1{
   display: flex;
-  width: 65%;
+  width: 45%;
   margin: 0 auto;
   text-align: center;
   flex-direction: column;
@@ -79,11 +80,16 @@ li{
   border: 1px solid #F8FF00;
   background-color: #000;
   color: #fff;
-  width: 55%;
-  padding: 18px;
+  width: 60%;
+  padding: 19px;
   margin: 0 auto;
   border-radius: 10px;
   font-size: 1.1rem;
+}
+
+.divS1 button:hover{
+  color: #F8FF00;
+  box-shadow: 0px 0px 40px 1px rgba(246, 255, 0, 0.177)
 }
 
 /* Section 2 */
@@ -134,18 +140,107 @@ li{
 /* Section 3 Carreras */
 
 .S3{
-  background-color: #fff;
+  background-color: #f0f0f0;
   color: #000;
-  height: 100vh;
+  height: 200vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
+  margin-top: 60px;
 }
 
 .divS3{
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 30px;
+  width: 65%;
+}
+
+.titleS3{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 100%;
+  gap: 20px;
+}
+
+.titleS3 h2{
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.titleS3 h2 span{
+  background-color: #F8FF00;
+  border-radius: 15px;
+  padding: 0px 10px;
+}
+
+.carreraText{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Articulos Carreras */
+
+.gridCarreras{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr) ;
+  gap: 20px;
+  width: 100%;
+}
+
+.gridCarreras{
+  padding: 30px;
+  display: grid;
+  gap: 60px;
+  text-align: left;
+  border-radius: 15px;
+}
+
+.carrerasItems{
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.carreraP{
+  color: #695cd2;
+  font-size: 1.2rem;
+  font-weight: 700;  
+}
+
+.carrerasItems h4{
+  font-size: 1.7rem;
+}
+
+.carreraText{
+  font-size: 0.9rem;
+  text-align: start;
+}
+
+.carrerasItems li{
+  list-style: circle;
+}
+
+.carrerasItems button{
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.tagsCarreras li{
+  display: flex;
+  gap: 10px;
 }
