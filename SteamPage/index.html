@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>STEAM ACADEMY</title>
-  <link href="./styles.css" rel="stylesheet" type="text/css" />
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>STEAM ACADEMY</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/3ed36b_1dd869a0544548a6bc627de97c9966c2%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/3ed36b_1dd869a0544548a6bc627de97c9966c2%7Emv2.png" type="image/png">
+    <link rel="shortcut icon" href="https://static.wixstatic.com/media/3ed36b_1dd869a0544548a6bc627de97c9966c2%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/3ed36b_1dd869a0544548a6bc627de97c9966c2%7Emv2.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/3ed36b_1dd869a0544548a6bc627de97c9966c2%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/3ed36b_1dd869a0544548a6bc627de97c9966c2%7Emv2.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
 <body>
 <!-- Encabezado Navegacion -->
 <header>
   <nav>
-    <img     src="https://static.wixstatic.com/media/3ed36b_17027b8e9cca45e1bcb439950303e448~mv2.png/v1/crop/x_0,y_0,w_1472,h_548/fill/w_202,h_74,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LOGO.png" alt="">
+    <img src="https://static.wixstatic.com/media/3ed36b_17027b8e9cca45e1bcb439950303e448~mv2.png/v1/crop/x_0,y_0,w_1472,h_548/fill/w_202,h_74,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LOGO.png" alt="Steam Academy">
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">Carreras</a></li>
@@ -18,7 +24,9 @@
       <li><a href="#">Blog</a></li>
       <li><a href="#">Fundación STEAM</a></li>
       <li><a href="#">Tienda</a></li>
-      <li><a href="#">U</a></li>
+      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+        <path d="M15.949 3.684l1.104 3.316h1.947a3 3 0 0 1 2.962 3.477l-1.252 7.131a4 4 0 0 1 -3.954 3.392h-9.512a3.994 3.994 0 0 1 -3.95 -3.371l-1.258 -7.173a3 3 0 0 1 2.964 -3.456h1.945l1.105 -3.316a1 1 0 0 1 1.898 .632l-.895 2.684h5.893l-.895 -2.684a1 1 0 1 1 1.898 -.632m-3.949 7.316a3 3 0 0 0 -2.995 2.824l-.005 .176a3 3 0 1 0 3 -3"></path>
+      </svg></a></li>
     </ul>
   </nav>
 </header>
@@ -29,7 +37,7 @@
   <div class="divS1">
   <h1>Desarrolla habilidades de alto impacto y comienza tu carrera en la industria IT</h1>
   <p>Descubre un universo de oportunidades en tecnología con opciones presenciales, cursos virtuales en vivo y aprendizaje virtual a tu ritmo, para impulsar tu carrera en el ámbito tecnológico.</p>
-  <button>Agenda una clase de MUESTRA</button> 
+  <button aria-label="Agendar clase de muestra">Agenda una clase de MUESTRA</button> 
   </div>
 </section>
 
@@ -47,24 +55,32 @@
 <!-- Section 3 Carreras -->
 <section class="S3">
   <div class="divS3">
-    <div class="titleS3">
-      <p><strong>Desarrolla habilidades de alto impacto con nuestras</strong></p>
+    <div class="titleS3 ml-64">
+      <p class="text-2xl"><strong>Desarrolla habilidades de alto impacto con nuestras</strong></p>
       <h2>CARRERAS <span>STEAM</span></h2>
     </div>
-    <p class="carreraText">En STEAM diseñamos productos con foco en empleabilidad que se adaptan a tus necesidades. Tenemos cursos introductorios para quienes quieren iniciar su camino en tecnología, carreras para quienes están convencidos de querer lograr ese primer trabajo en esta industria y cursos de upskilling para quienes buscan ampliar sus conocimientos y dar el siguiente paso.</p>
+    <p class="carreraTextSub">En STEAM diseñamos productos con foco en empleabilidad que se adaptan a tus necesidades. Tenemos cursos introductorios para quienes quieren iniciar su camino en tecnología, carreras para quienes están convencidos de querer lograr ese primer trabajo en esta industria y cursos de upskilling para quienes buscan ampliar sus conocimientos y dar el siguiente paso.</p>
     <div class="gridCarreras">
       <article class="carrerasItems">
           <p class="carreraP">Carrera</p>
           <h4>Desarrollo Full Stack</h4>
           <p class="carreraText">Aprende a desarrollar páginas y aplicaciones web para conseguir un trabajo en el mundo de la tecnología.</p>
-          <ul>
+          <ul class="listaCarreras">
             <li>Basado en proyectos</li>
             <li>Pasantías en empresas IT</li>
-            <li>Aprendiazje acelerado</li>
+            <li>Aprendizaje acelerado</li>
           </ul>
-          <ul>
-            <li><span></span>Alta demanda</li>
-            <li><span></span>Certificada</li>
+          <ul class="ulTags">
+            <li class="altaDemanda"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#518f41" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+              <path d="M6 18l0 -3"></path>
+              <path d="M10 18l0 -6"></path>
+              <path d="M14 18l0 -9"></path>
+              <path d="M18 18l0 -12"></path>
+            </svg></span>Alta demanda</li>
+            <li class="certificado"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#66baff" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+              <path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path>
+              <path d="M9 12l2 2l4 -4"></path>
+            </svg></span>Certificada</li>
           </ul>
           <button>Ver Más</button>
       </article>
@@ -73,14 +89,22 @@
           <p class="carreraP">Carrera</p>
           <h4>Diseño UXUI</h4>
           <p class="carreraText">En este curso aprenderás a hacer un research, e investigar acerca de un problema que convertirás o en una idea de app o web.</p>
-          <ul>
+          <ul class="listaCarreras">
             <li>Basado en proyectos</li>
             <li>Pasantías en empresas IT</li>
-            <li>Aprendiazje acelerado</li>
+            <li>Aprendizaje acelerado</li>
           </ul>
-          <ul>
-            <li><span></span>Alta demanda</li>
-            <li><span></span>Certificada</li>
+          <ul class="ulTags">
+            <li class="altaDemanda"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#518f41" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+              <path d="M6 18l0 -3"></path>
+              <path d="M10 18l0 -6"></path>
+              <path d="M14 18l0 -9"></path>
+              <path d="M18 18l0 -12"></path>
+            </svg></span>Alta demanda</li>
+            <li class="certificado"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#66baff" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+              <path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path>
+              <path d="M9 12l2 2l4 -4"></path>
+            </svg></span>Certificada</li>
           </ul>
           <button>Ver Más</button>
       </article>  
@@ -89,14 +113,22 @@
           <p class="carreraP">Carrera</p>
           <h4>Python Expert</h4>
           <p class="carreraText">Aprenderás las bases de programación, con uno de los lenguajes más populares en estos tiempos. De Cero a Experto.</p>
-          <ul>
+          <ul class="">
             <li>Basado en proyectos</li>
             <li>Pasantías en empresas IT</li>
-            <li>Aprendiazje acelerado</li>
+            <li>Aprendizaje acelerado</li>
           </ul>
-          <ul class="tagsCarreras">
-            <li><span>Alta demanda</span></li>
-            <li><span>Certificada</span></li>
+          <ul class="ulTags">
+            <li class="altaDemanda"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#518f41" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+              <path d="M6 18l0 -3"></path>
+              <path d="M10 18l0 -6"></path>
+              <path d="M14 18l0 -9"></path>
+              <path d="M18 18l0 -12"></path>
+            </svg></span>Alta demanda</li>
+            <li class="certificado"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#66baff" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+              <path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path>
+              <path d="M9 12l2 2l4 -4"></path>
+            </svg></span>Certificada</li>
           </ul>
           <button>Ver Más</button>
       </article>
@@ -108,11 +140,19 @@
           <ul>
             <li>Basado en proyectos</li>
             <li>Pasantías en empresas IT</li>
-            <li>Aprendiazje acelerado</li>
+            <li>Aprendizaje acelerado</li>
           </ul>
-          <ul>
-            <li><span></span>Alta demanda</li>
-            <li><span></span>Certificada</li>
+          <ul class="ulTags">
+            <li class="altaDemanda"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#518f41" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+              <path d="M6 18l0 -3"></path>
+              <path d="M10 18l0 -6"></path>
+              <path d="M14 18l0 -9"></path>
+              <path d="M18 18l0 -12"></path>
+            </svg></span>Alta demanda</li>
+            <li class="certificado"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#66baff" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+              <path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path>
+              <path d="M9 12l2 2l4 -4"></path>
+            </svg></span>Certificada</li>
           </ul>
           <button>Ver Más</button>
       </article>
@@ -124,20 +164,63 @@
           <ul>
             <li>Basado en proyectos</li>
             <li>Pasantías en empresas IT</li>
-            <li>Aprendiazje acelerado</li>
+            <li>Aprendizaje acelerado</li>
           </ul>
-          <ul>
-            <li><span></span>Alta demanda</li>
-            <li><span></span>Certificada</li>
+          <ul class="ulTags">
+            <li class="altaDemanda"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#518f41" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+              <path d="M6 18l0 -3"></path>
+              <path d="M10 18l0 -6"></path>
+              <path d="M14 18l0 -9"></path>
+              <path d="M18 18l0 -12"></path>
+            </svg></span>Alta demanda</li>
+            <li class="certificado"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#66baff" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+              <path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path>
+              <path d="M9 12l2 2l4 -4"></path>
+            </svg></span>Certificada</li>
           </ul>
           <button>Ver Más</button>
       </article>
     </div>
   </div>
 </section>
+
+  <!-- Section #4 Aprendizaje a tu medida -->
+<section class="S4">
+ <div class="divS4">
+  <div class="gridS4">
+
+    <div class="firstBox">
+      <h2>Aprendizaje a tu Medida</h2>
+      <p>Elige la modalidad de estudios que mejor se adapte a ti.</p>
+      <p>Desde<span>38 USD por mes</span></p>
+      <button>Agenda una clase de MUESTRA</button>
+    </div>
+    <div class="secondBox">
+      <div class="box1">
+        <h1>Presencial</h1>
+        <span>Vive la experiencia STEAM</span>
+        <hr>
+        <ul>
+          <li>Espacio con mentores de forma presencial</li>
+          <li>Acompañamiento semi-personalizado</li>
+        </ul>
+        <span>Barranquilla</span>
+      </div>
+      <div class="box2">
+        <h1>Virtual</h1>
+        <span>Desde la comodidad de tu casa</span>
+        <hr>
+        <ul>
+          <li>Espacio con mentores de forma virtual en vivo</li>
+          <li>Acompañamiento semi-personalizado</li>
+        </ul>
+        <span>Barranquilla</span>
+      </div>
+  </div>
+   </div>
+  </div>
+</section>
 </main>
-
-
 </body>
 <script src="script.js"></script>
 </html>
